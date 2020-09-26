@@ -3,6 +3,9 @@ import {Card, CardContent, TextField, Typography} from '@material-ui/core'
 import avatar from '../../../static/avatar.png'
 import styles from './About.module.css'
 
+/*
+ * Мэйн информация обо мне
+ */
 const About: React.FC = () => {
     const me: Array<{ prop: string, value: string }> = [{
         prop: 'Имя',
@@ -20,7 +23,7 @@ const About: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Card className={styles.bla}>
+            <Card>
                 <CardContent className={styles.root}>
                     <Typography className={styles.title} color="textSecondary" gutterBottom>
                         О себе

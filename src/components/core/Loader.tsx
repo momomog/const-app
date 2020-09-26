@@ -7,8 +7,10 @@ interface Props {
     size: number
 }
 
+/*
+ * Индикатор загрузки
+ */
 const Loader: React.FC<Props> = ({size}) => {
-
     return (
         <div className={styles.wrapper}>
             <CircularProgress size={size}/>

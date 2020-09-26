@@ -5,6 +5,9 @@ import {Card, CardContent, Typography} from '@material-ui/core'
 import {AppState} from '../../../reducers/appReducer'
 import styles from './Location.module.css'
 
+/*
+ * Координаторы города на яндекс-карте
+ */
 const Location: React.FC = () => {
     const {location}: AppState = useContext(AppContext)
 

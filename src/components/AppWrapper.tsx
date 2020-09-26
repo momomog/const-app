@@ -3,8 +3,12 @@ import {appReducer, AppState, initialState, setEnterTimeAction} from "../reducer
 import App from './App'
 import {HashRouter} from 'react-router-dom'
 
+// Контекст приложения. Содержит информацию о дате входа в приложение и координаты города
 export const AppContext: React.Context<AppState> = React.createContext(initialState)
 
+/*
+ * Главный компонент приложения. Оболочка
+ */
 const AppWrapper = () => {
     const [state, dispatch] = useReducer(appReducer, initialState)
 

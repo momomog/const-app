@@ -7,6 +7,10 @@ import styles from './EnterTime.module.css'
 
 let interval: number
 
+/*
+ * Время нахождения пользователя на сайте.
+ * PS. После перезагрузки страницы время будет слетать
+ */
 const EnterTime: React.FC = () => {
     const [currentTime, setCurrentTime] = useState<number>(Date.now())
     const {enterTime}: AppState = useContext(AppContext)

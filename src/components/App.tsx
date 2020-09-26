@@ -8,6 +8,9 @@ const About = React.lazy(() => import('./pages/About/About'))
 const Location = React.lazy(() => import('./pages/Location/Location'))
 const EnterTime = React.lazy(() => import('./pages/EnterTime/EnterTime'))
 
+/*
+ * Главный компонент приложения
+ */
 function App() {
     return (
         <>
