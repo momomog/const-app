@@ -4,6 +4,7 @@
     margin: 30px auto;
     padding: 15px;
 }
+
 .root {
     height: 448px;
 }
@@ -48,7 +49,6 @@
 }
 
 .form {
-    /*width: 45%;*/
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -60,7 +60,7 @@
 }
 
 .textfield {
-    margin: 0 0 10px 20px;
+    margin: 0 0 10px 20px !important;
     width: 40%;
 }
 
@@ -71,12 +71,6 @@
 .title {
     font-size: 19px;
 }
-
-
-
-
-
-
 
 
 /*/////////////////////*/
