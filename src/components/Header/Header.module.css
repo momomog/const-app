@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    color: rgba(34, 62, 131, 0.68);
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: rgba(20, 38, 137, 0.91);
+}
+
+.active {
+    color: rgba(255, 93, 112, 0.68) !important;
+
+}
