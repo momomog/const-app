@@ -1,7 +1,6 @@
 .wrapper {
     max-width: 600px;
-    width: 100%;
-    margin: 30px auto;
+    margin: 10px auto;
     padding: 15px;
 }
 
@@ -23,7 +22,7 @@
     .mainInfo {
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .form {
@@ -69,59 +68,5 @@
 }
 
 .title {
-    font-size: 19px;
+    font-size: 19px!important;
 }
-
-
-/*/////////////////////*/
-/*.mainInfo {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    margin-top: 100px;*/
-/*}*/
-
-/*@media (max-width: 515px) {*/
-/*    .mainInfo {*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        margin-top: 50px;*/
-/*    }*/
-
-/*    .form {*/
-/*        width: 70% !important;*/
-/*        margin-top: 10px;*/
-/*    }*/
-/*}*/
-
-/*.description {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    margin-top: 50px;*/
-/*}*/
-
-/*.avatar {*/
-/*    width: 140px;*/
-/*    height: 140px;*/
-/*    border-radius: 50%;*/
-/*}*/
-
-/*.form {*/
-/*    width: 45%;*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    position: relative;*/
-/*    top: 10px;*/
-/*}*/
-
-/*.row {*/
-/*    display: flex;*/
-/*}*/
-
-/*.textfield {*/
-/*    margin: 0 0 10px 20px;*/
-/*    width: 40%;*/
-/*}*/
-
-/*.area {*/
-/*    width: 60%;*/
-/*}*/

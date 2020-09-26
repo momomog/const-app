@@ -3,8 +3,8 @@ enum Actions {
 }
 
 export interface AppState {
-    enterTime: number
-    location: Array<number>
+    enterTime: number           // Время входа на сайт (ms)
+    location: Array<number>     // координаты г. Ульяновск
 }
 
 export interface Action {
@@ -17,7 +17,7 @@ export const setEnterTimeAction = (): Action => ({type: Actions.SET_ENTER_TIME})
 
 export const initialState: AppState = {
     enterTime: 0,
-    location: [54.31, 48.40]
+    location: [54.305, 48.40]
 }
 
 export const appReducer = (state: AppState, action: Action): AppState => {

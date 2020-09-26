@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import {YMaps, Map} from 'react-yandex-maps'
+import {YMaps, Map, Placemark} from 'react-yandex-maps'
 import {AppContext} from '../../AppWrapper'
 import {Card, CardContent, Typography} from '@material-ui/core'
 import {AppState} from '../../../reducers/appReducer'
@@ -20,7 +20,9 @@ const Location: React.FC = () => {
                         <YMaps>
                             <Map width={600}
                                  height={400}
-                                 defaultState={{center: location, zoom: 12}}/>
+                                 defaultState={{center: location, zoom: 12}}>
+                                <Placemark geometry={location}/>
+                            </Map>
                         </YMaps>
                     </div>
                 </CardContent>
