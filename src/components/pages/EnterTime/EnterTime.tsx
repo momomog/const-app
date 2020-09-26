@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useMemo, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import {AppState} from '../../../reducers/appReducer'
 import {AppContext} from '../../AppWrapper'
 import {Card, CardContent, Typography} from '@material-ui/core'
@@ -16,9 +16,7 @@ const EnterTime: React.FC = () => {
         return () => clearInterval(interval)
     }, [])
 
-    const [hours, minutes, seconds] = useMemo(() => {
-        return getDate(enterTime, currentTime)
-    }, [enterTime, currentTime])
+    const [hours, minutes, seconds] = getVisitTime(enterTime, currentTime)
 
     return (
         <div className={styles.wrapper}>
@@ -43,7 +41,7 @@ const EnterTime: React.FC = () => {
 export default EnterTime
 
 
-function getDate(enterTime: number, currentTime: number): Array<string | number> {
+function getVisitTime(enterTime: number, currentTime: number): Array<string | number> {
     const diff = currentTime - enterTime,
         secs = Math.floor((diff / 1000) % 60),
         mins = Math.floor((diff / (1000 * 60)) % 60),
