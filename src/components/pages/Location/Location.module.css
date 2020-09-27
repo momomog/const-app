@@ -1,9 +1,3 @@
-.wrapper {
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 15px;
-}
-
 .title {
     font-size: 19px;
 }
@@ -11,4 +5,5 @@
 .locationContainer {
     display: flex;
     justify-content: center;
+    min-height: 400px;
 }
