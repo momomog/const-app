@@ -1,1 +1,0 @@
-{"version":3,"sources":["Location.module.css"],"names":[],"mappings":"AAAA,uBACI,cACJ,CAEA,mCACI,YAAa,CACb,sBAAuB,CACvB,gBACJ","file":"7.824cd405.chunk.css","sourcesContent":[".title {\r\n    font-size: 19px;\r\n}\r\n\r\n.locationContainer {\r\n    display: flex;\r\n    justify-content: center;\r\n    min-height: 400px;\r\n}"]}
