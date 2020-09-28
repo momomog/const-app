@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useRef, useState} from 'react'
 import {AppState} from '../../../reducers/appReducer'
 import {AppContext} from '../../AppWrapper'
 import {Card, CardContent, Typography} from '@material-ui/core'
-import moment from 'moment'
+import {duration} from 'moment'
 import styles from './EnterTime.module.css'
 
 /*
@@ -43,7 +43,7 @@ export default EnterTime
 
 
 function getVisitedTime(enterTime: number, currentTime: number): Array<string | number> {
-    const temp = moment.duration(currentTime - enterTime),
+    const temp = duration(currentTime - enterTime),
         hours = temp.hours(),
         mins = temp.minutes(),
         secs = temp.seconds()

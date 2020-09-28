@@ -1,6 +1,5 @@
 import React from 'react'
-import {CircularProgress} from "@material-ui/core";
-
+import {CircularProgress} from '@material-ui/core'
 import styles from './Loader.module.css'
 
 interface Props {
@@ -10,7 +9,7 @@ interface Props {
 /*
  * Индикатор загрузки
  */
-const Loader: React.FC<Props> = ({size}) => {
+const Loader: React.FC<Props> = ({size = 50}) => {
     return (
         <div className={styles.wrapper}>
             <CircularProgress size={size}/>
